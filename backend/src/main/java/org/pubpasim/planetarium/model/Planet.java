@@ -22,6 +22,10 @@ public class Planet {
 
     private Double distanceFromStar;
 
+    public String getStar() {
+        return "Sun/Solar";
+    }
+
     public String getGalaxy() {
         return "Milky Way";
     }
