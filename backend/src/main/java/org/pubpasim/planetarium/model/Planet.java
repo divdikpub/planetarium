@@ -5,20 +5,22 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 @Entity
 public class Planet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
-    String name;
+    private String name;
 
-    Double diameter;
+    private Double diameter;
 
-    Double distanceFromStar;
+    private Double distanceFromStar;
 
     public String getGalaxy() {
         return "Milky Way";
